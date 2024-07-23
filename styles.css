@@ -1,0 +1,158 @@
+body {
+    font-family:cursive;
+    background-image: linear-gradient(to bottom, #f7f7f7, #e7e7e7);
+    background-size: 100% 300px;
+    background-position: 0% 100%;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: calc(25% - 40px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.box h2 {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.box p {
+    font-size: 16px;
+    color: #666;
+}
+
+.central-line {
+    border-bottom: 1px solid #ddd;
+    margin: 20px;
+}
+
+
+
+/* banner code */
+
+
+.banner img{
+    width: 4540px;
+    height: 100px;
+
+}
+.banner {
+    background-image: linear-gradient(to bottom, #4CAF50, #2E865F);
+    background-size: 100% 300px;
+    background-position: 0% 100%;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.banner h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.banner::before {
+    content: "";
+    display: block;
+    height: 100px;
+    background-image: url("bg7.png"); /* Add a pattern image if desired */
+    background-size: 100% 230px;
+    background-position: 0% 100%;
+}
+
+.footer{
+    background-color: transparent ;
+    text-align: center;
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Add more styles for responsiveness and other features */
+
+/* make the code is responsive for all devices */
+
+
+
+@media only screen and (max-width: 480px) {
+    .banner {
+         padding: 10px;
+     }
+    .banner h1 {
+         font-size: 24px;
+     }
+    .banner p {
+         font-size: 14px;
+     }
+    .container {
+         max-width: 90%;
+     }
+    .box {
+         width: calc(50% - 40px);
+     }
+ }
+ 
+ /* Tablet Devices (max-width: 768px) */
+ 
+ @media only screen and (max-width: 768px) {
+    .banner {
+         padding: 15px;
+     }
+    .banner h1 {
+         font-size: 28px;
+     }
+    .banner p {
+         font-size: 16px;
+     }
+    .container {
+         max-width: 90%;
+     }
+    .box {
+         width: calc(33.33% - 40px);
+     }
+ }
+ 
+ /* Desktop Devices (min-width: 1024px) */
+ 
+ @media only screen and (min-width: 1024px) {
+    .banner {
+         padding: 20px;
+     }
+    .banner h1 {
+         font-size: 36px;
+     }
+    .banner p {
+         font-size: 18px;
+     }
+    .container {
+         max-width: 1200px;
+    }
+}
